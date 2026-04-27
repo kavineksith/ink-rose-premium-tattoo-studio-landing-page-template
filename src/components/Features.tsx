@@ -61,9 +61,10 @@ const Features: React.FC = () => {
         <div className="relative glass-panel rounded-3xl overflow-hidden grid md:grid-cols-2">
            <div className="relative h-[400px] md:h-full">
              <img 
-               src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=2574&auto=format&fit=crop" 
+               src="https://images.unsplash.com/photo-1652882861012-95f3263cab63?q=80&w=1200" 
+               crossOrigin="anonymous"
                alt="Cozy Studio" 
-               className="absolute inset-0 w-full h-full object-cover"
+               className="w-full h-full object-cover"
              />
              <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 to-transparent"></div>
            </div>

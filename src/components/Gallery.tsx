@@ -3,12 +3,12 @@ import type { GalleryItem } from '../types';
 import { X, ZoomIn } from 'lucide-react';
 
 const galleryItems: GalleryItem[] = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=800&auto=format&fit=crop', category: 'Floral', alt: 'Flower arm tattoo' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=800&auto=format&fit=crop', category: 'Fine Line', alt: 'Back line art' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1562962230-16bc46364924?q=80&w=800&auto=format&fit=crop', category: 'Minimalist', alt: 'Minimal wrist' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1614252369475-531eba835eb1?q=80&w=800&auto=format&fit=crop', category: 'Couple', alt: 'Hand tattoo' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1603504822002-3acaffaddfdb?q=80&w=800&auto=format&fit=crop', category: 'Floral', alt: 'Rose shoulder' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1585002047805-4c09268fdfd4?q=80&w=800&auto=format&fit=crop', category: 'Fine Line', alt: 'Geometric' },
+  { id: 1, src: 'https://images.unsplash.com/photo-1660820221710-84319d0e2e96?q=80&w=1200', category: 'Fine Line Floral', alt: 'Flower arm tattoo' },
+  { id: 2, src: 'https://images.unsplash.com/photo-1547754145-ef9ff306e3f3?q=80&w=1200', category: 'Minimalist Flower', alt: 'Delicate flower tattoo' },
+  { id: 3, src: 'https://images.unsplash.com/photo-1508764356915-704089a634e2?q=80&w=1200', category: 'Delicate Detail', alt: 'Intricate design' },
+  { id: 4, src: 'https://images.unsplash.com/photo-1695226304152-931956f4a474?q=80&w=1200', category: 'Butterfly', alt: 'Butterfly wrist tattoo' },
+  { id: 5, src: 'https://images.unsplash.com/photo-1570168918437-5f25c140bd84?q=80&w=1200', category: 'Aesthetic Bouquet', alt: 'Rose shoulder piece' },
+  { id: 6, src: 'https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?q=80&w=1200', category: 'In-Action', alt: 'Tattoo process' },
 ];
 
 const Gallery: React.FC = () => {
@@ -38,6 +38,7 @@ const Gallery: React.FC = () => {
             >
               <img 
                 src={item.src} 
+                crossOrigin="anonymous"
                 alt={item.alt} 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -60,8 +61,9 @@ const Gallery: React.FC = () => {
            </button>
            <img 
             src={selectedImage.src} 
+            crossOrigin="anonymous"
             alt={selectedImage.alt} 
-            className="max-h-[90vh] max-w-full rounded-lg shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+            className="w-full h-auto max-h-[80vh] rounded-lg shadow-2xl"
             onClick={(e) => e.stopPropagation()} 
            />
            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white font-serif text-xl tracking-widest">

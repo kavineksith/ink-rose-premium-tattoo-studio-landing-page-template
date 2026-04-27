@@ -33,13 +33,13 @@ const App: React.FC = () => {
              <h2 className="font-serif text-4xl font-bold mb-4">Meet the <span className="text-rose-300">Artists</span></h2>
              <div className="flex flex-wrap justify-center gap-8 mt-12">
                {[
-                 { name: 'Elena Rose', spec: 'Fine Line', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop' },
-                 { name: 'Sarah Ink', spec: 'Watercolor', img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop' },
-                 { name: 'Maya Vibe', spec: 'Minimalist', img: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=400&auto=format&fit=crop' }
+                 { name: 'Elena Rose', spec: 'Fine Line & Floral', img: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=1200' },
+                 { name: 'Sarah Ink', spec: 'Minimalist & Geometric', img: 'https://images.unsplash.com/photo-1605647533135-51b5906087d0?q=80&w=1200' },
+                 { name: 'Maya Vibe', spec: 'Watercolor Artist', img: 'https://images.unsplash.com/photo-1564426622559-5af68da63b96?q=80&w=1200' }
                ].map((artist, idx) => (
                  <div key={idx} className="glass-card p-4 rounded-xl w-64 group hover:-translate-y-2 transition-transform">
                    <div className="h-64 w-full rounded-lg overflow-hidden mb-4">
-                     <img src={artist.img} alt={artist.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                     <img src={artist.img} crossOrigin="anonymous" alt={artist.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                    </div>
                    <h3 className="font-serif text-xl font-bold">{artist.name}</h3>
                    <p className="text-rose-300 text-sm">{artist.spec}</p>
