@@ -33,9 +33,9 @@ const App: React.FC = () => {
              <h2 className="font-serif text-4xl font-bold mb-4">Meet the <span className="text-rose-300">Artists</span></h2>
              <div className="flex flex-wrap justify-center gap-8 mt-12">
                {[
-                 { name: 'Elena Rose', spec: 'Fine Line', img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop' },
-                 { name: 'Sarah Ink', spec: 'Watercolor', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop' },
-                 { name: 'Maya Vibe', spec: 'Minimalist', img: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=400&auto=format&fit=crop' }
+                 { name: 'Elena Rose', spec: 'Fine Line', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop' },
+                 { name: 'Sarah Ink', spec: 'Watercolor', img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop' },
+                 { name: 'Maya Vibe', spec: 'Minimalist', img: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=400&auto=format&fit=crop' }
                ].map((artist, idx) => (
                  <div key={idx} className="glass-card p-4 rounded-xl w-64 group hover:-translate-y-2 transition-transform">
                    <div className="h-64 w-full rounded-lg overflow-hidden mb-4">

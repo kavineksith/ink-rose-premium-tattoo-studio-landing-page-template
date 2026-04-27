@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1597850239535-7798701955f0?q=80&w=2548&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=2548&auto=format&fit=crop"
           alt="Tattoo Art Background"
           className="w-full h-full object-cover opacity-60"
         />

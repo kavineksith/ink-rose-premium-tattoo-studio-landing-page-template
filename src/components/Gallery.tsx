@@ -3,12 +3,12 @@ import type { GalleryItem } from '../types';
 import { X, ZoomIn } from 'lucide-react';
 
 const galleryItems: GalleryItem[] = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1596704017254-9b1b1c97034b?q=80&w=800&auto=format&fit=crop', category: 'Floral', alt: 'Flower arm tattoo' },
+  { id: 1, src: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=800&auto=format&fit=crop', category: 'Floral', alt: 'Flower arm tattoo' },
   { id: 2, src: 'https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=800&auto=format&fit=crop', category: 'Fine Line', alt: 'Back line art' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1590246294326-0e95aa9755b7?q=80&w=800&auto=format&fit=crop', category: 'Minimalist', alt: 'Minimal wrist' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1591398858223-9529cc53406f?q=80&w=800&auto=format&fit=crop', category: 'Couple', alt: 'Hand tattoo' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1562962230-16bc46364924?q=80&w=800&auto=format&fit=crop', category: 'Floral', alt: 'Rose shoulder' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1614252369475-531eba835eb1?q=80&w=800&auto=format&fit=crop', category: 'Fine Line', alt: 'Geometric' },
+  { id: 3, src: 'https://images.unsplash.com/photo-1562962230-16bc46364924?q=80&w=800&auto=format&fit=crop', category: 'Minimalist', alt: 'Minimal wrist' },
+  { id: 4, src: 'https://images.unsplash.com/photo-1614252369475-531eba835eb1?q=80&w=800&auto=format&fit=crop', category: 'Couple', alt: 'Hand tattoo' },
+  { id: 5, src: 'https://images.unsplash.com/photo-1603504822002-3acaffaddfdb?q=80&w=800&auto=format&fit=crop', category: 'Floral', alt: 'Rose shoulder' },
+  { id: 6, src: 'https://images.unsplash.com/photo-1585002047805-4c09268fdfd4?q=80&w=800&auto=format&fit=crop', category: 'Fine Line', alt: 'Geometric' },
 ];
 
 const Gallery: React.FC = () => {
